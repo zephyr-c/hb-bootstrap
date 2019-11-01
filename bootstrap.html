@@ -4,7 +4,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bootstrap Exercise</title>
 
-  <!-- Load Bootstrap 4 -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 
   <!-- Load Font Awesome -->
 
@@ -15,9 +16,79 @@
 <body>
 
 <!-- Code goes here. -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">UberMelon</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="#">About<span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="#">Contact</a>
+      <a class="nav-item nav-link" href="#">Shop</a>
+    </div>
+    <div class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+     <a class="nav-item nav-link" href="#">Login</a>
+     <a class="nav-item nav-link" href="#">Favorite Melons</a>
+     <a class="nav-item nav-link" href="#">Settings</a>
+     <a class="nav-item nav-link" href="#">Profile</a>
+    </div>
+  </div>
+</nav>
 
-
-
+<div class="container" id="main_content">
+    <div class="row">
+        <div class="col">Main content!</div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <i class="fas fa-award"></i>
+            <b>Award Winning</b><br>
+            Don't take our word for it. See all tthe awards our melons have earned.
+        </div>
+        <div class="col">
+            <i class="fas fa-vote-yea"></i>
+            <b>Huge Selection</b><br>
+            We import melons form all over the world, ensuring we have every melon you could possibly desire.
+        </div>
+        <div class="col">
+            <i class="fas fa-certificate"></i>
+            <b>Certified Sustainable</b><br>
+            Our melons are sourced only from sustainabale, organic local farmers. These are the healthiest melons you'll ever eat.
+        </div>
+    </div>
+    
+    <div class="row" id="melon-table">
+        <div class="col-sm-0 col-xs-0">
+            <table>
+                <tr>
+                    <td><b>Melon</b></td>
+                    <td><b>Price</b></td>
+                    <td><b>Color</b></td>
+                    <td><b>Country</b></td>
+                </tr>
+                <tr>
+                    <td>Canteloupe</td>
+                    <td>$4.99/lb</td>
+                    <td>Tan</td>
+                    <td>Italy</td>
+                </tr>
+                <tr>
+                    <td>Honeydew</td>
+                    <td>$3.99/lb</td>
+                    <td>White/Green</td>
+                    <td>France/Algeria</td>
+                </tr>
+                <tr>
+                    <td>Casaba</td>
+                    <td>$7.99/lb</td>
+                    <td>Yellow</td>
+                    <td>Turkey</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
 
 
 
@@ -34,6 +105,7 @@ further study. Leave this at the bottom and code above it. -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/85944e5620.js" crossorigin="anonymous"></script>
 
 </body>
 </html>
